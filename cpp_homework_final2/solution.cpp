@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
             {
                 addStudent(student, gpa, names, gpas, size, capacity);
             }
-            catch (const std::string& e)
+            catch (const std::string &e)
             {
                 std::cout << e << std::endl;
             }
@@ -124,9 +124,9 @@ int main(int argc, char *argv[])
             // TODO: implement menu logic
             try
             {
-                std::cout << "Average GPA: " << averageGPA(gpas, size) << std::endl;
+                std::cout << "Average GPA: " << static_cast<int>(averageGPA(gpas, size)) << std::endl;
             }
-            catch (const std::string e)
+            catch (const std::string &e)
             {
                 std::cout << e << std::endl;
             }
